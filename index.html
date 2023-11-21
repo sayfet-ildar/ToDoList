@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="null.css">
+    <title>TODO</title>
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div id="HIGH">
+            <h1>"HIGH"</h1>
+            <form>
+                <div class="input" id="input">
+                    <input type="text" id="task" placeholder="Добавить важных дел">
+                    <button type="submit" class="button new" id="addButtonHigh"></button>
+                </div>
+            </form>
+            <template id="newTask"> 
+            <div class="task">
+                <div class="checkbox">
+                    <label class="new-input">
+                        <input type="checkbox" id="check">
+                        <span></span>
+                    </label>
+                </div>
+                <span id="1" class="newSpan"> Сверстать этот TODO list
+                </span>
+                <label class="button close"></label>
+            </div>
+            </template>
+        </div>
+            <template id="task_completed">
+            <div class="task completed">
+                <div class="checkbox">
+                    <label class="new-input">
+                        <input type="checkbox" id="check">
+                        <span></span>
+                </div>
+                </label>
+                <span> Начать делать задачу</span>
+                <label class="button close" id="btnClose"></label>
+        </div>
+    </template>
+        <div id="LOW">
+            <h1>"LOW"</h1>
+            <form>
+                <div class="input" id="inputLow">
+                    <input type="text" id="taskLow" placeholder="Добавить менее важных дел">
+                    <button type="submit" class="button new" id="addButtonLow"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
