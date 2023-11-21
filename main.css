@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+h1,
+h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.input {
+  border-radius: 6px;
+  border: 1px solid #979797;
+  color: #BBBBBB;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 11px;
+  display: flex;
+}
+
+.input input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  justify-content: center;
+  border-bottom: 1px solid white;
+  width: 476px;
+  height: 688px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: auto;
+  font-size: 18px;
+}
+
+.button {
+  cursor: pointer;
+  padding-right: 12.62px;
+  padding-top: 10px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: white;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 1px;
+  background: #998899;
+}
+
+.new:before {
+  transform: rotate(90deg);
+}
+
+.new:after {
+  transform: rotate(-180deg);
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.task,
+.newTask {
+  border-radius: 6px;
+  border: 1px solid #979797;
+  color: #202020;
+  margin: 8px;
+  padding: 11px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.new-input {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.new-input input[type="checkbox"] {
+  display: none;
+}
+
+.new-input span {
+  content: "";
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #998899;
+  padding: 2px;
+  background-clip: content-box;
+  border-radius: 100%;
+}
+
+.new-input input[type="checkbox"]:checked+span {
+  background-color: #C4C4C4;
+}
+
+.completed {
+  background-color: #F4F4F4;
+  color: #808080;
+}
